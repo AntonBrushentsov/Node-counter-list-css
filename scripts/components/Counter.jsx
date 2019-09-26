@@ -2,7 +2,7 @@ import React from 'react';
 
 class Counter extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.props = props;
         console.log('constructor: ', this);
         this.state = {
@@ -24,7 +24,7 @@ class Counter extends React.Component {
     }
     onReset () {
         console.log(this);
-        this.setState({ count:  this.state.count = 0
+        this.setState({ count: 0
         })
     }
     render() {
